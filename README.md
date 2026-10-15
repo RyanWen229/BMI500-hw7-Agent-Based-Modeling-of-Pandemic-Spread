@@ -6,6 +6,8 @@
 swen30@emory.edu
 </div>
 
+Statement: Codex (GPT-5.6 Sol) was used to complete this homework. The full chat available at: https://chatgpt.com/s/cx_6ad05c604ff881919d20a37208afd61d.
+
 This project explores stochastic SIR infection dynamics in a population of mobile agents on a bounded two-dimensional grid. It contains two executable Jupyter notebooks:
 
 - [Part A: Base infection model](partA_infection_dynamics.ipynb) — transmission, recovery, epidemic trajectories, and a factorial comparison of `p` and `q`.
@@ -78,7 +80,7 @@ Main observations:
 
 - Increasing `m` reduces population mixing and sharply lowers peak infection prevalence.
 - At `m = 0.60`, avoidance lowered the mean peak by 10.3 agents and delayed the peak by 24.8 steps.
-- Simple destination avoidance was not uniformly protective. At `m = 0.10`, it increased the mean peak by 4.7 agents in these runs. This reflects an interaction between rapid movement and an avoidance rule applied to all agents rather than a guaranteed intervention benefit.
+- Simple destination avoidance was not uniformly protective. At `m = 0.10`, it increased the mean peak by 4.7 agents in these runs. This indicates that avoidance of susceptible agents may ot be very effective since that did not the movements of the infected and those who were in close contacts with the infected.
 - At `m = 1.00`, no agent proposes a move, so avoidance and no avoidance are identical. Residual transmission can occur only among agents initially sharing cells.
 
 ### Strict quarantine at `m = 0.10`
